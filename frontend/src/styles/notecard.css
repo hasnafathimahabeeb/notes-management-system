@@ -1,0 +1,131 @@
+.note-grid {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(280px,1fr)
+    );
+}
+
+.note-card {
+  backdrop-filter: blur(16px);
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  transition: all 0.3s ease;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.15);
+}
+
+.note-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.2);
+}
+
+body.light .note-card {
+  background: white;
+  color: #111827;
+}
+
+body.dark .note-card {
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+
+  padding: 6px 14px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #ec4899
+  );
+
+  color: white;
+
+  font-size: 12px;
+
+  margin-bottom: 12px;
+}
+.badge-development {
+  background: #8b5cf6;
+}
+
+.badge-personal {
+  background: #06b6d4;
+}
+
+.badge-study {
+  background: #22c55e;
+}
+
+.badge-work {
+  background: #f97316;
+}
+.delete-btn{
+  margin-top:15px;
+  border:none;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  background:#ef4444;
+  color:white;
+  font-weight:600;
+}
+
+.delete-btn:hover{
+  opacity:0.9;
+}
+.note-card h3 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.note-card p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.card-actions{
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+}
+
+.edit-btn{
+  border:none;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  background:#3b82f6;
+  color:white;
+  font-weight:600;
+}
+
+.edit-btn:hover{
+  opacity:0.9;
+}
+.pin-btn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}

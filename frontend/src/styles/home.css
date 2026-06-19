@@ -1,0 +1,25 @@
+.dashboard {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e293b
+  );
+  min-height: calc(100vh - 70px);
+}
+
+body.light .main-content {
+  background: linear-gradient(
+    135deg,
+    #f8fafc,
+    #e2e8f0,
+    #f1f5f9
+  );
+}

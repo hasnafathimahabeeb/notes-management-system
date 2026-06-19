@@ -1,0 +1,37 @@
+.sidebar {
+  width: 220px;
+  min-height: calc(100vh - 70px);
+  background: #f1f5f9;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: #1e293b;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  color: #8b5cf6;
+  transform: translateX(5px);
+}
+
+/* Dark Mode */
+body.dark .sidebar {
+  background: #111827;
+}
+
+body.dark .sidebar li {
+  color: white;
+}
+
+body.dark .sidebar li:hover {
+  color: #a78bfa;
+}

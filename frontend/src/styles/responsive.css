@@ -1,0 +1,26 @@
+@media(max-width:768px){
+
+  .sidebar{
+    width:70px;
+  }
+
+  .sidebar li{
+    font-size:0;
+  }
+
+  .sidebar li::first-letter{
+    font-size:24px;
+  }
+
+  .navbar h2{
+    font-size:20px;
+  }
+
+  .main-content{
+    padding:15px;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+}
