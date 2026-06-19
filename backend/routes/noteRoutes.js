@@ -5,7 +5,7 @@ import {
   getNotes,
   updateNote,
   deleteNote,
-} from "../controllers/noteController.js";
+} from "../controllers/notecontroller.js";
 
 import protect from "../middleware/authMiddleware.js";
 
